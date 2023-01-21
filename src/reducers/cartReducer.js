@@ -18,7 +18,6 @@ export const cartReducer = (state, action) => {
         });
       }
 
-      console.log(products);
       return { ...state, products };
       break;
   }

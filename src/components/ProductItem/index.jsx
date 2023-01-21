@@ -4,6 +4,7 @@ const ProductItem = ({ data, onClick }) => {
   const handleClick = () => {
     onClick(data);
   };
+
   return (
     <C.Container onClick={handleClick}>
       <C.ProductPhotoArea>

@@ -14,7 +14,7 @@ const ModalProduct = ({ data, setStatus, status }) => {
   }, [status]);
 
   const handleAddToCart = () => {
-    dispatch({ type: "addProduct", payload: { data, qt } });
+    dispatch({ type: "ADD_PRODUCT", payload: { data, qt } });
     setStatus(false);
   };
 

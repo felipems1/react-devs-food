@@ -1,11 +1,19 @@
 import styled from "styled-components";
 
 export const DeliveryArea = styled.div`
-  margin-top: 200px;
-  width: 40%;
-  height: 40%;
+  margin-top: 10px;
+  width: 20%;
+  height: 420px;
   background-color: #eee;
   padding: 25px;
+
+  @media (max-width: 1075px) {
+    width: 30%;
+  }
+
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
 `;
 
 export const Title = styled.h3`
@@ -22,8 +30,8 @@ export const Form = styled.form`
   margin-top: 40px;
   margin-bottom: 20px;
   display: flex;
-  flex-wrap: wrap;
   gap: 15px;
+  flex-direction: column;
 `;
 
 export const Input = styled.input`

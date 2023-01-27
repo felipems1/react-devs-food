@@ -12,7 +12,7 @@ const ProductItem = ({ data, onClick }) => {
       </C.ProductPhotoArea>
       <C.ProductInfoArea>
         <C.ProductName>{data.name}</C.ProductName>
-        <C.ProductPrice>R$ {data.price}</C.ProductPrice>
+        <C.ProductPrice>R$ {data.price.toFixed(2)}</C.ProductPrice>
         <C.ProductIngredients>{data.ingredients}</C.ProductIngredients>
       </C.ProductInfoArea>
       <C.ProductButtonArea>

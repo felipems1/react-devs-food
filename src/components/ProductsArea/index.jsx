@@ -73,6 +73,13 @@ const ProductsArea = () => {
           <C.TotalValue>R$ {total.toFixed(2)}</C.TotalValue>
         </C.Info>
       </C.Details>
+      {subtotal !== 0 ? (
+        <C.ButtonArea>
+          <C.Button>Finalizar pedido</C.Button>
+        </C.ButtonArea>
+      ) : (
+        <></>
+      )}
     </C.ProductsArea>
   );
 };

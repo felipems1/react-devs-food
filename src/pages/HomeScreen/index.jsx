@@ -42,7 +42,7 @@ const HomeScreen = () => {
     clearTimeout(searchTimer);
     searchTimer = setTimeout(() => {
       setActiveSearch(headerSearch);
-    }, 2000);
+    }, 1500);
   }, [headerSearch]);
 
   useEffect(() => {

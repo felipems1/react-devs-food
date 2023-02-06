@@ -2,20 +2,10 @@ import styled from "styled-components";
 
 export const ProductsArea = styled.div`
   margin-top: 10px;
-  width: 70%;
-  background-color: #fff;
+  height: max-content;
   padding: 25px;
+  width: 90%;
   background-color: #eee;
-
-  @media (max-width: 1075px) {
-    width: 60%;
-  }
-
-  @media (max-width: 1000px) {
-    padding: 20px;
-    width: 90%;
-    margin-top: 80px;
-  }
 `;
 
 export const Title = styled.h3`
@@ -34,8 +24,10 @@ export const Product = styled.div`
   border-bottom: 1px solid #bbb;
   padding-bottom: 20px;
 
-  @media (max-width: 1050px) {
-    margin-top: 10px;
+  @media (max-width: 1024px) {
+    margin-top: 15px;
+    gap: 10px;
+    padding-bottom: 10px;
   }
 `;
 
@@ -54,17 +46,13 @@ export const ProductDetails = styled.div`
 export const ProductImage = styled.img`
   width: 80px;
   height: auto;
-
-  @media (max-width: 1050px) {
-    width: 50px;
-  }
 `;
 
 export const ProductName = styled.p`
   font-weight: bold;
   font-size: 19px;
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1024px) {
     font-size: 15px;
   }
 `;
@@ -90,7 +78,7 @@ export const Increment = styled.div`
 export const ProductPrice = styled.div`
   font-weight: bolder;
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1024px) {
     font-size: 13px;
   }
 `;
@@ -98,15 +86,19 @@ export const ProductPrice = styled.div`
 export const Details = styled.div`
   margin-top: 20px;
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1024px) {
     margin-top: 10px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 14px;
   }
 `;
 
 export const Info = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
 `;
 
 export const TotalItems = styled.div``;
@@ -121,4 +113,22 @@ export const TotalPrice = styled.div`
 
 export const TotalValue = styled.div`
   font-weight: bold;
+`;
+
+export const ButtonArea = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+  @media (max-width: 425px) {
+    margin-top: 20px;
+  }
+`;
+
+export const Button = styled.button`
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #0f0;
+  color: #000;
 `;

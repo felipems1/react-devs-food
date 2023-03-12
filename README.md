@@ -19,7 +19,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - ReactJS
 - JavaScript
 - Styled-Components
-- React-Router
 - Context API
 - Git e Github
 
